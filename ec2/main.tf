@@ -14,4 +14,5 @@ provider "aws" {
 resource "aws_instance" "test" {
   ami = "ami-0dfcb1ef8550277af"
   instance_type     = var.instancetype
+  key_name   = "soms-key"
 }
